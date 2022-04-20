@@ -1,16 +1,23 @@
-# cutaway
+# Cutaway - JsonPlaceholder
 
-A new Flutter project.
+===============================================
 
-## Getting Started
+## Plugins
 
-This project is a starting point for a Flutter application.
+#### A wrapper around InheritedWidget to make them easier to use and more reusable.
 
-A few resources to get you started if this is your first Flutter project:
+-   provider
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+#### Serializable Json
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-   build_runner
+-   json_serializable
+-   json_annotation:
+
+===============================================
+
+## Links
+
+#### { Json } Placeholder
+
+! [alt link](https://jsonplaceholder.typicode.coms)
