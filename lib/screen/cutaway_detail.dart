@@ -19,10 +19,10 @@ class CutawayDetailScreen extends StatelessWidget {
         Provider.of<UserProvider>(context, listen: false).findById(userId);
     final posts =
         Provider.of<PostProvider>(context, listen: false).findByUserId(userId);
-    // final albums = Provider.of<AlbumProvider>(context, listen: false)
-    //     .findByAlbumId(userId);
-    // final photos = Provider.of<PhotoProvider>(context, listen: false)
-    //     .findByPhotoId(userId);
+    final albums = Provider.of<AlbumProvider>(context, listen: false)
+        .findByAlbumId(userId);
+    final photos = Provider.of<PhotoProvider>(context, listen: false)
+        .findByPhotoId(userId);
 
     return Scaffold(
       appBar: AppBar(
@@ -44,10 +44,10 @@ class CutawayDetailScreen extends StatelessWidget {
             const SizedBox(height: 10),
             const Text('Albums',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28)),
-            // Text(albums.title),
-            // const SizedBox(height: 10),
-            // // Image.network(photos.url),
-            // Image.network(photos.thumbnailUrl),
+            Text(albums.title),
+            const SizedBox(height: 10),
+            // Image.network(photos.url),
+            Image.network(photos.thumbnailUrl),
           ],
         ),
       ),

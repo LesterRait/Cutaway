@@ -23,7 +23,7 @@ class InfoWidget extends StatelessWidget {
           ),
         ),
         Text(
-          user.email,
+          'Email: ${user.email}',
           style: const TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
