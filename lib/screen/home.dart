@@ -16,26 +16,6 @@ class _HomeScreenState extends State<HomeScreen> {
   bool isLoading = true;
 
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
-  void didChangeDependencies() {
-    Provider.of<UserProvider>(context).reloadUser().then(
-          (value) => setState(
-            () {
-              isLoading = false;
-            },
-          ),
-        );
-    Provider.of<PostProvider>(context).reloadPosts();
-    Provider.of<AlbumProvider>(context).reloadAlbum();
-    Provider.of<PhotoProvider>(context).reloadPhoto();
-    super.didChangeDependencies();
-  }
-
-  @override
   Widget build(BuildContext context) {
     final user = Provider.of<UserProvider>(context);
     return Scaffold(
@@ -57,5 +37,27 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
       ),
     );
+  }
+
+// reload
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void didChangeDependencies() {
+    Provider.of<UserProvider>(context).reloadUser().then(
+          (value) => setState(
+            () {
+              isLoading = false;
+            },
+          ),
+        );
+    Provider.of<PostProvider>(context).reloadPosts();
+    Provider.of<AlbumProvider>(context).reloadAlbum();
+    Provider.of<PhotoProvider>(context).reloadPhoto();
+    super.didChangeDependencies();
   }
 }

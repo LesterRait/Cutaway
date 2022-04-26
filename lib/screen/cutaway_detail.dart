@@ -9,7 +9,6 @@ class CutawayDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Provider
     final userId = ModalRoute.of(context)!.settings.arguments as int;
     final user =
         Provider.of<UserProvider>(context, listen: false).findById(userId);
