@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:cutaway/provider/albums.dart';
-import 'package:cutaway/provider/photos.dart';
-import 'package:cutaway/provider/posts.dart';
-import 'package:cutaway/provider/users.dart';
-import 'package:cutaway/widget/info.dart';
-import 'package:cutaway/widget/post.dart';
+import 'package:cutaway/provider/provider.dart';
+import 'package:cutaway/widget/widget.dart';
 import 'package:provider/provider.dart';
 
 class CutawayDetailScreen extends StatelessWidget {

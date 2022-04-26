@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cutaway/client/ApiClient.dart';
-import 'package:cutaway/provider/albums.dart';
-import 'package:cutaway/provider/photos.dart';
-import 'package:cutaway/provider/posts.dart';
-import 'package:cutaway/provider/users.dart';
+import 'package:cutaway/provider/provider.dart';
 import 'package:cutaway/widget/card.dart';
 import 'package:provider/provider.dart';
 
