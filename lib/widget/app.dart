@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cutaway/provider/provider.dart';
-import 'package:cutaway/screen/routes.dart';
+import 'package:cutaway/screen/screen.dart';
 import 'package:provider/provider.dart';
 
 class MyApp extends StatelessWidget {
